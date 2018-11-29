@@ -1,1 +1,5 @@
 
+** Source of this practice exercise **
+
+RANDOM USER GENERATOR
+https://randomuser.me/
