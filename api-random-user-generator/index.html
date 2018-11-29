@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+  
+  <title>Animate.css Sandbox + API Call</title>
+ <style>
+  #section-1 {
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  /* animation-iteration-count:1; */
+  }
+  #animateBtn-1 {
+  animation-duration: 2s;
+  animation-delay: 1s;
+  }
+  #animateBtn-2 {
+  animation-duration: 2s;
+  animation-delay: 1.2s;
+  }
+  #section-2 {
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  /* animation-iteration-count:1; */
+  }
+  #animateHeader-1 {
+  animation-duration: 2s;
+  animation-delay: 2s;
+  }
+  #animateHeader-2 {
+  animation-duration: 2s;
+  animation-delay: 2s;  
+  }
+  
+  </style>
+</head>
+<body>
+
+<div class="container">
+  
+    <div class="row">
+        <div class="col-3 text-center ml-5">
+        </div>
+
+          <div class="col-m6 text-center ml-5">
+            <div class="card animated fadeInUp border-0" id="card" style="width: 18rem;">
+              <h5 class="card-title">Was this the professional who assisted you today ?</h5>
+              <img class="card-img-top thisImage" alt="Card image cap" style="width: 400px;">
+                <div class="card-body ml-5 ">
+                  <a href="#" class="btn btn-primary ml-5" id="buttonYes">Yes</a>
+                  <a href="#" class="btn btn-primary" id="buttonNo">No</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-3 text-center">
+          </div>
+    </div>
+
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+  <script>
+    $(function(){
+      //OnClick Event
+      $('#buttonYes').click(function(){
+        animate('#card', 'fadeOutUp');
+        return false
+      });
+
+      $('#buttonNo').click(function(){
+        animate('#card', 'fadeOutDown');
+        return false;
+      })
+
+
+      $('#animateBtn-1').click(function(){
+        animate('#anim-head-1', 'bounce');
+        animate('#anim-body-1', 'rubberBand');
+        return false;
+      });
+
+      $('#animateBtn-2').click(function(){
+        animate('#anim-head-2', 'flash');
+        animate('#anim-body-2', 'shake');
+        return false;
+      });
+
+      $('#animateHeader-1').click(function(){
+        animate('header', 'slideOutUp');
+        setTimeout(function(){
+          $('header').css('visibility', 'hidden').toggle(function(){
+            animate('header', 'slideInDown');
+            setTimeout(function(){
+              $('header').css('visibility', 'visible');
+            },1000);
+          });
+        },1000);
+        return false;
+      });
+
+      //Animate Function
+      function animate(element, animation) {
+        $(element).addClass('animated '+animation);
+        var wait = setTimeout(function(){
+          $(element).removeClass('animated '+animation);
+        }, 1000);
+      }
+    })  
+  </script> 
+  <!-- <h1>Authors</h1>
+  <ul id="authors"></ul> -->
+  <script src="scripts.js"></script>
+</body>
+</html>

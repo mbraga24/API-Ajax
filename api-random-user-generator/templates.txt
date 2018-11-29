@@ -1,0 +1,117 @@
+// function loadDoc() {
+
+//   var request = new XMLHttpRequest();
+
+//   request.open("GET", 'http://api.openweathermap.org/data/2.5/weather?q=London&APPID=0d1d2a59371fcd0b02829c2517a628b9', true);
+
+// request.onreadystatechange = function() {
+
+//     if (this.readyState == 4 && this.status == 200) {
+//       var data = JSON.parse(this.response);
+//       console.log(data)
+//     }
+//   };
+  
+// request.send();
+
+// }
+
+// //invoke function
+// loadDoc();
+
+
+// FETCH API STRUCTURE
+// fetch(url)
+//   .then(function(data) {
+//     // Here you get the data to modify as you please
+//     })
+//   })
+//   .catch(function(error) {
+//     // If there is any error you will catch them here
+//   });   
+
+
+//  // data.results[0].location.state
+//  let data_length = data.results.length
+//  // console.log(data.results.length)
+//  // console.log(data.results)
+ 
+//  array = [];
+//  for(let i = 0; i < data_length; i++) {
+//    array.push(data.results[i].location.state);
+//  }
+
+//  // console.log(array);
+
+//  // for(let i = 0; i < data_length; i++) {
+//  // //   console.log(states[i].toLowerCase())
+//  //     console.log(array[i]);
+//  // }
+
+//  // if/else for status OK between 200-300
+//  for(let i = 0; i < states.length; i++) {
+//  // console.log(i)
+//    for(let j = 0; j < data.results.length; j++) {
+//      // console.log(j)
+//      if(states[i] === array[j]) {
+//        console.log(array[j])
+//      } else {
+//        console.log("Not me!")
+//      }
+//    }
+//}
+
+// if/else for status OK between 200-300
+    //  for(let i = 0; i < countries.length; i++) {
+     // console.log(i)
+      //  for(let j = 0; j < data.results.length; j++) {
+      //    // console.log(j)
+      //    if(countries[i] === data.results[j].nat) {
+      //     console.log(data.results[j].picture.large); 
+      //     console.log(data.results[j])
+      //     console.log(data.results[j].nat)
+      //    } else {
+      //      console.log("Not me!")
+      //    }
+      //  }
+    // }
+
+
+
+
+    <!-- <header class="text-center bg-primary text-white p-5  animated slideInDown">
+      <h1 class="display-4">Animate.css Sandbox</h1>
+    </header>
+    <div class="row">
+      <div class="col-12 text-center">
+        <button id="animateHeader-1" class="btn btn-primary animated fadeInDown">Header In/Out</button>
+      </div>
+    </div>
+
+    <div class="card animated fadeInDown" id="placeHere" style="width: 18rem; ">
+        <img class="card-img-top thisImage" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+    <section id="section-1" class="bg-faded p-5 my-3 animated slideInLeft">
+      <h1 id="anim-head-1">Section One</h1>
+      <p id="anim-body-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, delectus aperiam. Officia enim eum sequi dolorum accusantium debitis, placeat iure, adipisci quod earum, et libero numquam magni esse aliquam vel delectus commodi doloremque. Atque libero quibusdam ducimus doloribus animi tempore?</p>
+      <button id="animateBtn-1"class="btn btn-primary animated fadeInLeft">Animate Seciton One</button>
+    </section>
+
+    <section id="section-2" class="bg-faded p-5 my-3 animated slideInRight">
+      <h1 id="anim-head-2">Section Two</h1>
+      <p id="anim-body-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, delectus aperiam. Officia enim eum sequi dolorum accusantium debitis, placeat iure, adipisci quod earum, et libero numquam magni esse aliquam vel delectus commodi doloremque. Atque libero quibusdam ducimus doloribus animi tempore?</p>
+        <button id="animateBtn-2" class="btn btn-primary animated fadeInRight">Animate Section Two</button>
+    </section>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top isThisRight" src="gata-sk8.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div> -->
