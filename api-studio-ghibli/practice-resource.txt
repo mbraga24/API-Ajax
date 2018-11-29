@@ -1,0 +1,5 @@
+
+** Source of this practice exercise **
+
+STUDIO GHLIBLI API
+https://ghibliapi.herokuapp.com/#
